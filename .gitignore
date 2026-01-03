@@ -1,3 +1,4 @@
 .env
+testscraper.js
 node_modules/
 logs/
