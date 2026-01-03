@@ -17,7 +17,7 @@ router.post("/upload", async (req, res) => {
     for (let i = 0; i < data.length; i += chunkSize) {
       const chunk = data.slice(i, i + chunkSize);
 
-      // 🔹 Flatten data into one big array of values
+      //  Flatten data into one big array of values
       const values = chunk.flatMap((row) => [
         row.sdg_goal,
         row.sdg_name,
