@@ -16,7 +16,7 @@ if (!process.env.MONGO_SSL_CERT_PATH) {
 const client = new MongoClient(process.env.MONGO_URI, {
   tls: true,
   authMechanism: "MONGODB-X509",
-  tlsCertificateKeyFile: process.env.OTHER_MONGO_SSL_CERT || process.env.MONGO_SSL_CERT_PATH ,
+  tlsCertificateKeyFile:process.env.MONGO_SSL_CERT_PATH ,
 });
 
 // --- Optional: verify connection on startup ---
